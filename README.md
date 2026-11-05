@@ -6,7 +6,7 @@ A simple Snake Game built with HTML, CSS and JavaScript.
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
+
 
 This project is my attempt to recreate the classic Snake Game that many of us have played before. The idea is simple: control the snake, eat the food, and try not to crash into the walls or your own body.
 
