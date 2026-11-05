@@ -1,0 +1,206 @@
+
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: crimson;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* GAME CONTAINER */
+
+.game-container {
+    width: 100%;
+    max-width: 520px;
+    background: #F5F0DC;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* GAME HEADER */
+.game-header {
+    margin-bottom: 25px;
+}
+
+.game-header h1 {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.game-header p {
+    color: #9aabb9;
+    font-size: 0.95rem;
+}
+
+/* SCOREBOARD */
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.score-card {
+    flex: 1;
+    background: coral;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.score-card h2 {
+    font-size: 0.9rem;
+    color: #aab8c5;
+    margin-bottom: 8px;
+}
+
+.score-card p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: mintcream;
+}
+
+/* GAME SECTION */
+.game-section {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.game-status {
+    margin-bottom: 12px;
+    color: orange;
+    font-weight: bold;
+    font-size: 1rem;
+    min-height: 20px;
+}
+
+#game-board {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    background: #0b141d;
+    border: 3px solid orange;
+    border-radius: 8px;
+}
+
+/* GAME BUTTONS */
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.game-controls button,
+.mobile-controls button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.game-controls button {
+    padding: 12px 18px;
+    background: orange;
+    color: #101820;
+}
+
+.game-controls button:hover:not(:disabled) {
+    background: #25c747;
+    transform: translateY(-2px);
+}
+
+.game-controls button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* MOBILE CONTROLS */
+.mobile-controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.horizontal-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.mobile-controls button {
+    width: 55px;
+    height: 50px;
+    background: #263849;
+    color: #39e75f;
+    font-size: 1.5rem;
+}
+
+.mobile-controls button:active {
+    background: #39e75f;
+    color: #101820;
+}
+
+/* FOOTER */
+.game-footer {
+    margin-top: 22px;
+    color: #9aabb9;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .game-container {
+        padding: 18px 12px;
+    }
+
+    .game-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .game-header p {
+        font-size: 0.85rem;
+    }
+
+    .score-card {
+        padding: 12px;
+    }
+
+    .score-card p {
+        font-size: 1.4rem;
+    }
+
+    .game-controls button {
+        padding: 11px 13px;
+        font-size: 0.9rem;
+    }
+
+    .mobile-controls {
+        display: flex;
+    }
+}
